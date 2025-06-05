@@ -23,11 +23,11 @@
 
 smarthomeapi/
 ├── app/
-│ ├── models/ # 数据模型
-│ ├── schemas/ # Pydantic 数据验证模型
-│ ├── routers/ # 路由文件
-│ └── main.py # FastAPI 启动入口
-├── requirements.txt # Python依赖文件
+│   ├── models/        # 数据模型
+│   ├── schemas/       # Pydantic 数据验证模型
+│   └── routers/       # 路由文件
+├── main.py            # FastAPI 启动入口
+├── requirements.txt   # Python依赖文件
 └── README.md
 
 
