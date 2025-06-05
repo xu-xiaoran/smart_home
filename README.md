@@ -21,14 +21,16 @@
 
 ## 📂 项目结构
 
+```plaintext
 smarthomeapi/
 ├── app/
-│   ├── models/        # 数据模型
-│   ├── schemas/       # Pydantic 数据验证模型
-│   └── routers/       # 路由文件
-├── main.py            # FastAPI 启动入口
-├── requirements.txt   # Python依赖文件
+│   ├── models/
+│   ├── schemas/
+│   └── routers/
+├── main.py
+├── requirements.txt
 └── README.md
+```
 
 
 ## 启动项目
