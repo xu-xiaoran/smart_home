@@ -22,16 +22,44 @@
 ##  项目结构
 
 ```plaintext
-smarthomeapi/
+smart_home/
 ├── app/
-│   ├── models/
-│   ├── schemas/
-│   └── routers/
-├── main.py
-├── requirements.txt
-└── README.md
+│   ├── main.py               # FastAPI 程序入口
+│   ├── database.py           # 数据库连接与基础配置
+│   ├── models/               # 存放 SQLAlchemy ORM 模型
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── house.py
+│   │   ├── device.py
+│   │   ├── usage_record.py
+│   │   ├── security_event.py
+│   │   └── user_feedback.py
+│   ├── schemas/              # 存放 Pydantic 模型（用于请求/响应校验）
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── house.py
+│   │   ├── device.py
+│   │   ├── usage_record.py
+│   │   ├── security_event.py
+│   │   └── user_feedback.py
+│   ├── crud/                 # 存放对数据库的增删改查操作封装
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── house.py
+│   │   ├── device.py
+│   │   ├── usage_record.py
+│   │   ├── security_event.py
+│   │   └── user_feedback.py
+│   └── routers/              # 存放 FastAPI 路由（接口）模块
+│       ├── __init__.py
+│       ├── user.py
+│       ├── house.py
+│       ├── device.py
+│       ├── usage_record.py
+│       ├── security_event.py
+│       └── user_feedback.py
+└── venv/
 ```
-
 
 ## 启动项目
 
